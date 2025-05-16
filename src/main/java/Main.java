@@ -16,14 +16,11 @@ public class Main {
 
 
 
-  static  int getLoan(int p , int n , int r) throws ParseException {
-        NumberFormat format = NumberFormat.getNumberInstance(Locale.UK);
-        int amount = p *(r * n);
-        String finalAmount= NumberFormat.getInstance().format(amount);
-
-
-        return (int ) format.parse(finalAmount);
-
+  static   String  getLoan(int p , int n , int r) throws ParseException {
+        int interest = (p * r * n) / 100;
+        int totalAmount = p + interest;
+         NumberFormat format = NumberFormat.getCurrencyInstance(Locale.UK);
+        return  format.format(totalAmount);
 
   }
 }
