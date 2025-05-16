@@ -3,13 +3,12 @@ package main.java;
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) throws ParseException    {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to LLBank , you can get loan at anytime ]");
 
+        System.out.println("Welcome to LLBank , you can get loan at anytime ]");
         System.out.println(getLoan(10 , 5 , 2));
 
     }
