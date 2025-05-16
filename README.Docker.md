@@ -17,3 +17,7 @@ Then, push it to your registry, e.g. `docker push myregistry.com/myapp`.
 
 Consult Docker's [getting started](https://docs.docker.com/go/get-started-sharing/)
 docs for more detail on building and pushing.
+
+# Road blockers
+Currently i have issues to build and run my test because of the way i created my maven prject 
+cannot find the .mvnm dir..
